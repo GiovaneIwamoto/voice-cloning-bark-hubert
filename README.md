@@ -35,25 +35,29 @@ Interestingly, more common and regular voices tend to be cloned more accurately.
 
 ---
 
-### **INSTALLATION GUIDE**
-
 ### **INSTALLATION COMMON ERRORS**
 
-pip install pip==23.2.1
+To ensure compatibility and avoid potential issues with newer releases, this project requires the use of a specific version of pip: pip==23.2.1. By installing this version, you can prevent dependency conflicts or installation errors that may arise from changes introduced in later versions.
 
-If you encounter an issue while running the cell below, and the error is related to:
+If you encounter an issue while running `notebook.ipynb`, and the error is related to:
 
+```
 ValueError: mutable default <class 'fairseq.dataclass.configs.CommonConfig'> for field common is not allowed: use default_factory
+```
 
 You can resolve this by installing Fairseq using the following command:
 
+```
 %pip install git+https://github.com/One-sixth/fairseq.git
+```
 
 If you then encounter the error:
 
+```
 OSError: [WinError 1314] The client does not have the necessary privilege: '..\\examples' -> 'fairseq\\examples'
 ...
 note: This error originates from a subprocess, and is likely not a problem with pip.
+```
 
 You should run the installation command in the terminal using administrator privileges in PowerShell, rather than in the terminal within VS Code.
 
