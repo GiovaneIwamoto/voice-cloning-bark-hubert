@@ -1,0 +1,14 @@
+# Model files
+/Literature/semantic/*
+/Literature/wav/*
+src/data/*
+
+# Audio files
+*.wav
+*.npz
+audio/*
+
+# Cache files and environment
+__pycache__
+.venv
+.idea
