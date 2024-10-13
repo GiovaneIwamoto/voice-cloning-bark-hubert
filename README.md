@@ -6,15 +6,24 @@
 
 [![Icons](https://skillicons.dev/icons?i=py,pytorch&theme=dark)](https://skillicons.dev)
 
+---
+
 ### **CUSTOM VOICE-CLONING**
 
 Voice cloning, the process of synthesizing a person's voice using machine learning, has seen significant advancements in recent years. AI models like this one can generate human-like audio from text inputs with high accuracy. However, a limitation of Bark is that it does not support the creation of personalized voices from audio samples. To address this limitation, [SerpAI](https://github.com/serp-ai/bark-with-voice-clone) has developed a feature that enables voice cloning from custom audio samples. This extension processes outputs from the HuBERT model and transforms them into semantic tokens compatible with Bark’s text-to-speech model, allowing for speech transfer and voice cloning. Check [gitmylo](https://github.com/gitmylo/bark-voice-cloning-HuBERT-quantizer) for the solution to the semantic token generation for better voice clones and finetunes.
+
+---
 
 ### **SEMANTIC TOKEN EXTRACTION**
 
 The code in this repository has been adapted to capture the semantics of a pre-trained [HuBERT pt-br model](https://huggingface.co/MadVoyager/bark-voice-cloning-portuguese-HuBERT-quantizer/blob/main/portuguese-HuBERT-quantizer_24_epoch.pth). This model extracts semantic representations from portuguese audio, converting acoustic patterns into discrete tokens that preserve essential speech information. These tokens are crucial for the voice cloning process, as they capture the semantic and phonetic elements that define a voice's style, intonation, and unique characteristics, allowing for realistic audio synthesis.
 
-Once the semantic tokens are extracted and aligned with Bark, they are saved in a .npz file. This speech history file can then be used to generate audio with voice cloning. In the provided code, the .npz file is loaded as the voice_name parameter, containing information about the cloned voice extracted by the HuBERT model. The text_prompt input is processed to generate the final audio, using both the textual data and the voice history, ensuring the output maintains the cloned voice's characteristics.
+Once the semantic tokens are extracted and aligned with Bark, they are saved in a `.npz` file. This speech history file can then be used to generate audio with voice cloning. In the provided code, the `.npz` file is loaded as the `voice_name` parameter, containing information about the cloned voice extracted by the HuBERT model. The `text_prompt` input is processed to generate the final audio, using both the textual data and the voice history, ensuring the output maintains the cloned voice's characteristics.
+
+> [!TIP]
+> For an alternative explanation on voice cloning using the mentioned techniques, you can refer to this detailed guide: [AI Voice Cloning with Bark and HuBERT](https://www.linkedin.com/pulse/ai-voice-cloning-bark-hubert-practical-guide-felix-leber) - A Practical Guide by Felix Leber.
+
+---
 
 ### **AUDIO QUALITY FOR SEMANTIC TOKEN GENERATION**
 
@@ -22,10 +31,8 @@ To achieve better results in voice cloning, it is essential that the input audio
 
 The length of the training audio is also important. Very short samples, particularly those under one second, do not provide enough information for the model to capture the voice's nuances. Ideally, the audio should be between 5 and 12 seconds long, with 10 seconds being a good starting point for high-quality results. Clearly pronounced speech, without background noise and from a single speaker, is crucial. Furthermore, the sample should contain complete sentences, without interruptions, allowing the model to learn proper intonation and rhythm.
 
-Interestingly, more common and regular voices tend to be cloned more accurately. Although the model can handle more complex voices, it may struggle to replicate them with the same fidelity. To further improve results, multiple versions of the cloned voice can be generated until one closely matches the original. This generation can then be used as a new voice history, ensuring greater consistency and quality in future reproductions.
-
-> [!TIP]
-> For an alternative explanation on voice cloning using the mentioned techniques, you can refer to this detailed guide: [AI Voice Cloning with Bark and HuBERT](https://www.linkedin.com/pulse/ai-voice-cloning-bark-hubert-practical-guide-felix-leber) - A Practical Guide by Felix Leber.
+> [!NOTE]
+> More common and regular voices tend to be cloned more accurately. Although the model can handle more complex voices, it may struggle to replicate them with the same fidelity. To further improve results, multiple versions of the cloned voice can be generated until one closely matches the original. This generation can then be used as a new voice history, ensuring greater consistency and quality in future reproductions.
 
 ---
 
@@ -37,9 +44,10 @@ Interestingly, more common and regular voices tend to be cloned more accurately.
 
 ### **INSTALLATION COMMON ERRORS**
 
-To ensure compatibility and avoid potential issues with newer releases, this project requires the use of a specific version of pip: pip==23.2.1. By installing this version, you can prevent dependency conflicts or installation errors that may arise from changes introduced in later versions.
+> [!WARNING]
+> To ensure compatibility and avoid potential issues with newer releases, this project requires the use of a specific version of `pip==23.2.1`. By installing this version, you can prevent dependency conflicts or installation errors that may arise from changes introduced in later versions.
 
-If you encounter an issue while running `notebook.ipynb`, and the error is related to:
+Issue while running `notebook.ipynb`, and the error is related to:
 
 ```
 ValueError: mutable default <class 'fairseq.dataclass.configs.CommonConfig'> for field common is not allowed: use default_factory
