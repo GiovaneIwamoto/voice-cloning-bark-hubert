@@ -1,12 +1,20 @@
-# Voice cloning bark
+# VOICE CLONING BARK HUBERT
 
-<div style="position:relative;width:200px;height:133.33333333333334px;"><iframe src="https://serp.ly/@serpai/badges/ai-alliance" frameborder="0" scrolling="no" width="300px" height="300px" style="position:absolute;z-index:1;"></iframe><a href="https://serp.ly/@serpai/badge-links/artificial-intelligence-alliance" title="" target="_blank" style="display:block;position:absolute;width:100%;height:100%;z-index:2;"></a></div>
+### **OVERVIEW**
 
-https://serp.ly/@serpai/badge-links/artificial-intelligence-alliance
-
-<div style="position:relative;width:200px;height:133.33333333333334px;"><iframe src="https://serp.ly/@serpai/badges/free-ai" frameborder="0" scrolling="no" width="300px" height="300px" style="position:absolute;z-index:1;"></iframe><a href="https://serp.ly/@serpai/badge-links/artificial-intelligence-alliance" title="" target="_blank" style="display:block;position:absolute;width:100%;height:100%;z-index:2;"></a></div>
+[![Icons](https://skillicons.dev/icons?i=py,pytorch&theme=dark)](https://skillicons.dev)
 
 ---
+
+<br>
+
+<img src="https://media.licdn.com/dms/image/v2/D560BAQHyVf5Gy4VdxQ/company-logo_200_200/company-logo_200_200/0/1682517064853/serpdotai_logo?e=1736985600&v=beta&t=bOGgFqbWFwxcM1EApXepgL1ICJHe3f7OXKhY9waD8fg" alt="SerpDotAI Logo" width="100"/>
+
+---
+
+### **INSTALLATION GUIDE**
+
+### **INSTALLATION COMMON ERRORS**
 
 pip install pip==23.2.1
 
@@ -25,3 +33,9 @@ OSError: [WinError 1314] The client does not have the necessary privilege: '..\\
 note: This error originates from a subprocess, and is likely not a problem with pip.
 
 You should run the installation command in the terminal using administrator privileges in PowerShell, rather than in the terminal within VS Code.
+
+### **AUTHOR**
+
+- Giovane Iwamoto, computer science student at UFMS - Brazil, Campo Grande - MS.
+
+I am always open to receiving constructive criticism and suggestions for improvement in my developed code. I believe that feedback is an essential part of the learning and growth process, and I am eager to learn from others and make my code the best it can be. Whether it's a minor tweak or a major overhaul, I am willing to consider all suggestions and implement the changes that will benefit my code and its users.
