@@ -36,12 +36,6 @@ The length of the training audio is also important. Very short samples, particul
 
 ---
 
-<br>
-
-<img src="https://media.licdn.com/dms/image/v2/D560BAQHyVf5Gy4VdxQ/company-logo_200_200/company-logo_200_200/0/1682517064853/serpdotai_logo?e=1736985600&v=beta&t=bOGgFqbWFwxcM1EApXepgL1ICJHe3f7OXKhY9waD8fg" alt="SerpDotAI Logo" width="100"/>
-
----
-
 ### **INSTALLATION COMMON ERRORS**
 
 > [!WARNING]
