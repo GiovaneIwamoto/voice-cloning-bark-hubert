@@ -63,6 +63,8 @@ note: This error originates from a subprocess, and is likely not a problem with 
 
 You should run the installation command in the terminal using administrator privileges in PowerShell, rather than in the terminal within VS Code.
 
+---
+
 ### **AUTHOR**
 
 - Giovane Iwamoto, computer science student at UFMS - Brazil, Campo Grande - MS.
